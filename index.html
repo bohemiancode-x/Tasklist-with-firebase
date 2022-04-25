@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Task-list</title>
+    <style>
+        .container{
+          max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        <h2 class="">Tasks</h2>
+        <ul>
+            
+        </ul>
+        <form>
+          <label for="task">Add a new task:</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="task" required>
+            <div class="input-group-append">
+              <input type="submit" value="add" class="btn btn-outline-secondary">
+            </div>
+          </div>
+        </form>
+        <button class="my-3">Unsubscribe from changes</button>
+      </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+
+<script>
+    //initialize firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyCou-GFqneDrGIE0XzkF01LHESxP8nblTE",
+  authDomain: "task-list-9d963.firebaseapp.com",
+  projectId: "task-list-9d963",
+  storageBucket: "task-list-9d963.appspot.com",
+  messagingSenderId: "279092876139",
+  appId: "1:279092876139:web:fb9bc244f9ea37bac3f22e",
+  measurementId: "G-ZWJC9K2C2N"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+</script>
+<script src="./app.js"></script>
+    
+</body>
+</html>
